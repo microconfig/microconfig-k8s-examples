@@ -1,5 +1,4 @@
-spring:
-  datasource:
-    maximum-pool-size: 1
-    minimum-pool-size: 10
-    url: jdbc:postgresql://${this@pgHost}:5432/${this@name}
+spring.datasource:
+  maximum-pool-size: 1
+  minimum-pool-size: 10
+  url: jdbc:postgresql://${this@pgHost}:5432/${this@name}

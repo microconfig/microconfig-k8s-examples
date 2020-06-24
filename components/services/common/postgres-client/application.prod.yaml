@@ -1,6 +1,5 @@
 #var pgHost: 10.11.12.13
 
-spring:
-  datasource:
-    maximum-pool-size: 10
-    minimum-pool-size: 100
+spring.datasource:
+  maximum-pool-size: 10
+  minimum-pool-size: 100
