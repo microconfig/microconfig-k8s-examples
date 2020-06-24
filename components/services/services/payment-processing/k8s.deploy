@@ -1,4 +1,4 @@
-#include internal-service
+#include deployment, service
 
 requests:
   cpu: 8
