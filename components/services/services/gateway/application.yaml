@@ -1,3 +1,5 @@
 #include monitoring
 
 requests.secure: true
+
+server.port: 9000

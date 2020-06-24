@@ -32,12 +32,12 @@ spec:
           imagePullPolicy: Always
           name: ${this@name}
           ports:
-            - containerPort: 8080
+            - containerPort: ${app::this@server.port}
               protocol: TCP
           readinessProbe:
             httpGet:
               path: /actuator/health/readiness
-              port: 8080
+              port: ${app::this@server.port}
             initialDelaySeconds: 5
             periodSeconds: 5
           volumeMounts:

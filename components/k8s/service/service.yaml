@@ -8,7 +8,7 @@ spec:
   selector:
     application: ${this@name}
   ports:
-    - port: 8080
+    - port: ${app::this@server.port}
       protocol: TCP
-      targetPort: 8080
-      name: http-8080
+      targetPort: ${app::this@server.port}
+      name: http-${app::this@server.port}
