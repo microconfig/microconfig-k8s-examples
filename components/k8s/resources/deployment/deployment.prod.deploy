@@ -1,1 +1,5 @@
 deploy.strategy: Rolling
+
+requests:
+  cpu: 2
+  memory: 2048M
