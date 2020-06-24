@@ -3,3 +3,5 @@
 requests:
   cpu: 8
   memory: #{4 * 1024}M
+
+replicas.count: 4

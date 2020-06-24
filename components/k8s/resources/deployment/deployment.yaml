@@ -55,6 +55,6 @@ spec:
       restartPolicy: Always
   triggers:
     - type: ConfigChange
-  replicas: ${this@replicas.count:1}
+  replicas: ${this@replicas.count:2}
   strategy:
     type: ${this@deploy.strategy:Recreate}
