@@ -2,7 +2,6 @@ microconfig.template.deploymentConfig:
   fromFile: ${deployment@configDir}/deployment.yaml
   toFile: k8s/deployment.yaml
 
-
 app.version: 1.2.3
 config.version: 1.2.4
 

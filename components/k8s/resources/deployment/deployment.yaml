@@ -9,6 +9,11 @@ metadata:
 spec:
   selector:
     application: ${this@name}
+  triggers:
+    - type: ConfigChange
+  replicas: ${this@replicas.count:2}
+  strategy:
+    type: ${this@deploy.strategy:Recreate}
   template:
     metadata:
       labels:
@@ -50,11 +55,6 @@ spec:
             name: ${this@name}
         - name: secrets
           secret:
-            secretName: limit-manager
+            secretName: secrets
         ${this@additional.volumes:}
       restartPolicy: Always
-  triggers:
-    - type: ConfigChange
-  replicas: ${this@replicas.count:2}
-  strategy:
-    type: ${this@deploy.strategy:Recreate}
