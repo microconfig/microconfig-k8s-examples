@@ -2,7 +2,7 @@
 
 To build configs:
 1) Clone this repo.
-2) Download the last microconfig.jar(or compiled binary for your OS) from https://github.com/microconfig/microconfig/releases
+2) Download the latest microconfig.jar(or compiled binary for your OS) from https://github.com/microconfig/microconfig/releases
 4) Execute the build config command.
 
 ```
