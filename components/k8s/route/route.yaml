@@ -5,7 +5,7 @@ metadata:
   labels:
     application: ${this@name}
 spec:
-  host: ${this@name}.apps.${k8s-cluster@cluster.url.base}
+  host: ${this@name}.apps.${this@cluster.url.base}
   to:
     kind: Service
     name: ${this@name}

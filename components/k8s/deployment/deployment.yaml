@@ -22,7 +22,7 @@ spec:
         configVersion: ${this@config.version}
     spec:
       containers:
-        - image: ${image-registry@image.url}
+        - image: ${this@image.url}
           env:
             - name: JAVA_TOOL_OPTIONS
               value: >-
