@@ -2,4 +2,5 @@ microconfig.mustache.route:
   fromFile: ${route@configDir}/route.yaml
   toFile: k8s/route.yaml
 
-#var ssl.enable: true
+ssl.enable: true
+cluster.url.base: k8s-cluster.org

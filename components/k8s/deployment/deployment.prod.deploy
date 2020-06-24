@@ -1,3 +1,5 @@
+#var registry.project.url: registry.internal.org/ci0100
+
 deploy.strategy: Rolling
 
 requests:
