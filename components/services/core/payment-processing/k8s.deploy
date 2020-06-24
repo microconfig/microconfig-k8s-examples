@@ -1,0 +1,5 @@
+#include internal-service
+
+requests:
+  cpu: 8
+  memory: #{4 * 1024}M

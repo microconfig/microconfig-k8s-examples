@@ -1,0 +1,3 @@
+#include monitoring, postgres-client
+
+transaction.workers.pool-size: 10

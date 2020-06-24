@@ -1,0 +1,26 @@
+microconfig.template.deploymentConfig:
+  fromFile: ${deployment@configDir}/deployment.yaml
+  toFile: k8s/deployment.yaml
+
+
+app.version: 1.2.3
+config.version: 1.2.4
+
+requests:
+  cpu: 2
+  memory: 1024M
+
+limits:
+  cpu: ${this@requests.cpu}
+  memory: ${this@requests.memory}
+
+java.opts:
+  -Dapp.version=${this@app.version}
+  -Dconfig.version=${this@app.version}
+  -Dfile.encoding=UTF-8
+  -XX:+CrashOnOutOfMemoryError
+  -XX:MaxRAMPercentage=${this@maxRamPercentage}
+
+#var maxRamPercentage: #{(${this@limitsMb} - ${this@nativeMb}) * 100 / ${this@limitsMb}}
+#var limitsMb: #{'${this@limits.memory}'.replace('M', '')}
+#var nativeMb: 300

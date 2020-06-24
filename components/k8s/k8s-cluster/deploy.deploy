@@ -1,0 +1,2 @@
+cluster.url.api: https://api.${this@cluster.url.base}:6443
+cluster.url.base: k8s-cluster.org

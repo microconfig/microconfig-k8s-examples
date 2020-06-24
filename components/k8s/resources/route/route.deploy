@@ -1,0 +1,5 @@
+microconfig.mustache.route:
+  fromFile: ${route@configDir}/route.yaml
+  toFile: k8s/route.yaml
+
+#var ssl.enable: true

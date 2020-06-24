@@ -1,0 +1,3 @@
+requests:
+  secure: false
+  default-user-role: admin

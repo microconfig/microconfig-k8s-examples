@@ -1,0 +1,3 @@
+registry.project.url: registry.org/sigma/ci0100
+
+#var image.url: ${this@registry.project.url}/${this@name}:${this@app.version}
