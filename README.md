@@ -7,7 +7,7 @@ To build configs:
 
 ```
 git clone https://github.com/microconfig/microconfig-k8s-examples.git
-mcVersion=v4.1.5
+mcVersion=v4.1.9 //always use the last version
 curl -SL  https://github.com/microconfig/microconfig/releases/download/${mcVersion}/microconfig.jar --output microconfig.jar
 java -jar microconfig.jar -r microconfig-k8s-examples -e prod
 ```
